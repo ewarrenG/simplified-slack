@@ -1,0 +1,24 @@
+.Sidebar-container{
+  color: #fff;
+  background-color: blue;
+  width: 20%;
+}
+.Sidebar-ul{
+  padding-left: 10px;
+}
+.Sidebar-ul-nested{
+  padding-top: 20px;
+  padding-left: 10px;
+}
+.Sidebar-li-title, .Sidebar-li-nested{
+  list-style: none;
+  padding: 5px 0px 5px 10px;
+}
+.Sidebar-li-title{
+  font-weight: bold;
+}
+.Sidebar-li-nested.selected {
+  background-color: yellow;
+  color: black;
+  border-radius: 5px 0px 0px 5px;
+}

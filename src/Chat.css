@@ -1,0 +1,29 @@
+.Chat-container{
+  width: 60%;
+  border: solid grey 1px;
+  vertical-align: bottom;
+}
+.Chat-ul{
+  max-height: 450px;
+  overflow: scroll;
+}
+.Chat-li{
+  list-style: none;
+  padding: 5px 0;
+}
+.Chat-msgTimestamp{
+  color: grey;
+  padding-left: 10px;
+}
+.Chat-inputContainer{
+  padding-left: 30px;
+}
+.Chat-input{
+  margin-top: 10px;
+  border-radius: 5px;
+  width: 90%;
+  padding: 5px;
+  height: 32px;
+  line-height: 32px;
+  font-size: 18px;
+}
