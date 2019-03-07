@@ -3,19 +3,19 @@ import React from 'react';
 import './Chat.css';
 import moment from 'moment';
 
-function Chat({user, activeChat, allChatMessages, onSendMessage }) {
-  const newChatMessage = [{sender: '', timestamp: '', message: 'Chat has no messages'}];
+function Chat({ user, activeChat, allChatMessages, onSendMessage }) {
+  const newChatMessage = [{ sender: '', timestamp: '', message: 'Chat has no messages' }];
   const chatMessages = allChatMessages[activeChat] || newChatMessage;
   return (
     <div className="Chat-container">
       {/* Chat container */}
       <Messages activeChat={activeChat} chatMessages={chatMessages} />
-      <NewMessage user={user} onSendMessage={onSendMessage} activeChat={activeChat}/>
+      <NewMessage user={user} onSendMessage={onSendMessage} activeChat={activeChat} />
     </div>
   );
 }
 function Messages({ chatMessages }) {
-    return (
+  return (
     <ul id="Chat-ul" className="Chat-ul">
       {chatMessages.map((msg, index) => (
         <>
@@ -39,13 +39,16 @@ function NewMessage({ user, activeChat, onSendMessage }) {
         placeholder="Type your message here. Enter to send."
         onKeyPress={event => {
           if (event.key === 'Enter') {
-            onSendMessage({
-              sender: user,
-              message: event.target.value,
-              timestamp: moment()._d.toString()
-            }, activeChat)
+            onSendMessage(
+              {
+                sender: user,
+                message: event.target.value,
+                timestamp: moment()._d.toString()
+              },
+              activeChat
+            );
             event.target.value = '';
-            var ul = document.getElementById("Chat-ul");
+            var ul = document.getElementById('Chat-ul');
             ul.scrollTop = ul.scrollHeight;
           }
         }}

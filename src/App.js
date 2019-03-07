@@ -9,8 +9,8 @@ import moment from 'moment';
 class App extends Component {
 
   state = {
-    user: 'Dave',
-    activeChat: 'Dave',
+    user: 'Elliot',
+    activeChat: 'general',
     messages: data.messages
   }
 

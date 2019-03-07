@@ -6,13 +6,13 @@ let data = {
   },
   people: {
     name: 'people',
-    list: ['Dave', 'Sarah', 'Zack', 'Pam', 'Erin', 'Joe']
+    list: ['Elliot', 'Sarah', 'Zack', 'Pam', 'Erin', 'Joe']
   },
   messages: {
-    Dave: [
+    Elliot: [
       {
-        sender: 'Dave',
-        message: 'A message from Dave',
+        sender: 'Elliot',
+        message: 'A message from Elliot',
         timestamp: '[Today at 3:58 PM]'
       },
       {
@@ -21,8 +21,8 @@ let data = {
         timestamp: '[Today at 3:58 PM]'
       },
       {
-        sender: 'Dave',
-        message: 'A message from Dave',
+        sender: 'Elliot',
+        message: 'A message from Elliot',
         timestamp: '[Today at 3:58 PM]'
       },
       {
@@ -31,8 +31,8 @@ let data = {
         timestamp: '[Today at 3:58 PM]'
       },
       {
-        sender: 'Dave',
-        message: 'A message from Dave',
+        sender: 'Elliot',
+        message: 'A message from Elliot',
         timestamp: '[Today at 3:58 PM]'
       },
       {
